@@ -1,0 +1,16 @@
+Source: psmisc
+Section: core
+Priority: optional
+Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Build-Depends: debhelper, libncurses-dev
+XCS-Cross-Host-Build-Depends: debhelper
+XCS-Cross-Build-Depends: libncurses-dev
+Standards-Version: 3.9.1
+
+Package: pstree
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: pstree utility that uses the proc file system
+ This package contains pstree utility that shows currently running processes as
+ a tree.
+Homepage: http://psmisc.sf.net/
